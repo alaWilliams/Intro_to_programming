@@ -9,3 +9,9 @@ function calculate(number1, number2) {
 }
 
 calculate(1, 2);
+
+function returnCalculation(number1, number2) {
+  return number1 + number2;
+}
+
+process.stdout.write('\n' + returnCalculation(3, 4));
