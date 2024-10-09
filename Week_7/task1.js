@@ -6,17 +6,21 @@
 
 
 function printLetters() {
+  let alphabet = ''
   for (let i = 10; i < 36; i++) {
-    process.stdout.write(i.toString(36))
+    alphabet += i.toString(36)
   }
+  return alphabet
 };
 
-printLetters();
+console.log(printLetters());
 
 function printNumbers() {
+  let numbers = '';
   for (let i = 0; i < 10; i++) {
-    process.stdout.write(i.toString())
+    numbers += i.toString()
   }
+  return numbers;
 }
 
-printNumbers();
+console.log(printNumbers());
