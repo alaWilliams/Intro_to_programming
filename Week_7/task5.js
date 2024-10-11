@@ -25,9 +25,11 @@ process.stdout.write('Please enter a string: ')
 process.stdin.on('data', function(string) {
   let input = string.toString().trim();
   let newString = replaceSmileys(input);
-   process.stdout.write('Replaced text: ' + newString + '\n')
 
-   newString = replaceSmileysWithReplacer(input, '*');
-   process.stdout.write('Replaced text (*):  ' + newString)
+  process.stdout.write('Replaced text: ' + newString + '\n')
+
+  newString = replaceSmileysWithReplacer(input, '*');
+  process.stdout.write('Replaced text (*):  ' + newString)
+
   process.exit();
 });
